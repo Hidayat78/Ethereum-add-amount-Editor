@@ -11,11 +11,14 @@ const CodeEditor = () => {
     return Array.from({ length: numLines }, (_, index) => index + 1);
   };
 
+  
   const handleTextChange = (e) => {
     setText(e.target.value);
   };
+  
 
   const validateInput = () => {
+
     // Split the input text into lines
     const lines = text.split("\n");
 
